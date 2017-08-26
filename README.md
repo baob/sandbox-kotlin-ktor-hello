@@ -14,3 +14,4 @@ Following example [here](https://github.com/kotlin/ktor)
 
     brew install jenv
     brew install kotlin
+    brew install gradle
