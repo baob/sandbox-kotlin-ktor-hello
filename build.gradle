@@ -1,3 +1,18 @@
+//buildscript necessary for kotlin
+buildscript {
+    ext.kotlin_version = '1.1.4'
+
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'kotlin'
+
+sourceCompatibility = 1.8
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 
@@ -10,6 +25,9 @@ repositories {
 
 // In this section you declare the dependencies for your production and test code
 dependencies {
+    // needed for kotlin
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+
     // The production code uses the SLF4J logging API at compile time
     compile 'org.slf4j:slf4j-api:1.7.25'
 
