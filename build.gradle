@@ -16,6 +16,13 @@ apply plugin: 'application'
 
 mainClassName = 'HelloKt'
 
+sourceSets {
+     main.kotlin.srcDirs += 'src'
+     // these defaults already included:
+     // main.kotlin.srcDirs += 'src/main/kotlin'
+     // main.java.srcDirs += 'src/main/java'
+}
+
 sourceCompatibility = 1.8
 
 // Apply the java plugin to add support for Java
