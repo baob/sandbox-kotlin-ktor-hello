@@ -9,3 +9,8 @@ Following example [here](https://github.com/kotlin/ktor)
     https://github.com/udalov/kotlin-vim
 
     https://github.com/tfnico/vim-gradle
+
+## Kotlin / Java setup
+
+    brew install jenv
+    brew install kotlin
